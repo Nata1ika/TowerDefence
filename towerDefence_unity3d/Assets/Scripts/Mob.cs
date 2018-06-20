@@ -2,8 +2,9 @@
 
 public class Mob : MonoBehaviour
 {
-    public static System.Action<float> RewardEvent; //моб мертв, игрок должен поулчить награду
-    public static System.Action<float> DamageEvent; //моб дошел до конца пути, игрок должен получить урон
+    public static System.Action<float>  RewardEvent; //моб мертв, игрок должен поулчить награду
+    public static System.Action<float>  DamageEvent; //моб дошел до конца пути, игрок должен получить урон
+    public static System.Action         DestroyEvent;
 
     [SerializeField] float _maxHp;
     [SerializeField] float _damage;
@@ -51,5 +52,6 @@ public class Mob : MonoBehaviour
     private void OnDestroy()
     {
         GameController.StopGameEvent -= DestroyObj;
+        DestroyEvent?.Invoke();
     }
 }

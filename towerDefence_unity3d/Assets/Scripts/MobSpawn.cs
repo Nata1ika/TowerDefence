@@ -9,21 +9,40 @@ public class MobSpawn : MonoBehaviour
 
     float _time;
     State _spawn = State.notInit;
-    int _waveIndex = 0;
+    int _waveIndex;
+    int _countMob; //текущее количество мобов на поле
 
     private void Start()
     {
         GameController.StartGameEvent += Init;
+        Mob.DestroyEvent += OnDestroyMob;
     }
 
-    private void Init()
+    private void OnDestroy()
+    {
+        GameController.StartGameEvent -= Init;
+        Mob.DestroyEvent -= OnDestroyMob;
+    }
+
+    void Init()
     {
         foreach (var wave in _waves)
         {
             wave.Init();
         }
-        _time = 0;
+        _waveIndex = 0;
+        _time = 0;        
+        _countMob = 0;
         _spawn = State.spawnWave;
+    }
+
+    void OnDestroyMob()
+    {
+        _countMob--;
+        if (_countMob == 0 && _spawn == State.notInit)
+        {
+            GameController.Victory();
+        }
     }
 
     private void Update()
@@ -49,7 +68,9 @@ public class MobSpawn : MonoBehaviour
                 _time = 0;
                 if (mobPrefab != null)
                 {
-                    Mob mob = Instantiate(mobPrefab, transform);
+                    Vector2? pos = _map.GetPosition(0);
+                    Mob mob = Instantiate(mobPrefab, pos.HasValue ? new Vector3(pos.Value.x, 0, pos.Value.y) : Vector3.zero, Quaternion.identity, transform);
+                    _countMob++;
                     mob.Init(_map);
                 }
                 else
