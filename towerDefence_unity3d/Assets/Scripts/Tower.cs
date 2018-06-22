@@ -29,7 +29,7 @@ public class Tower : MonoBehaviour
     {
         Debug.Log("OnTriggerEnter " + other.gameObject.name + "   " + gameObject.name);
 
-        if (other.gameObject.layer == LayerMask.NameToLayer("Mob"))
+        if (isActive && other.gameObject.layer == LayerMask.NameToLayer("Mob"))
         {
             Mob mob = other.gameObject.GetComponent<Mob>();
             if (mob != null)
