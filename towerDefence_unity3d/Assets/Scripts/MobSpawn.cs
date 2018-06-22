@@ -79,6 +79,10 @@ public class MobSpawn : MonoBehaviour
                     else
                     {
                         _spawn = State.notInit;
+                        if (_countMob == 0)
+                        {
+                            GameController.Victory();
+                        }
                     }
                 }
             }

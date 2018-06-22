@@ -21,6 +21,16 @@ public class Mob : MonoBehaviour
         GameController.StopGameEvent += DestroyObj;
     }
 
+    public void Damage(float damage)
+    {
+        _hp -= damage;
+        if (_hp <= 0)
+        {
+            RewardEvent?.Invoke(_reward);
+            DestroyObj();
+        }
+    }
+
     private void DestroyObj()
     {
         Destroy(gameObject);
@@ -41,11 +51,6 @@ public class Mob : MonoBehaviour
                 DamageEvent?.Invoke(_damage);
                 DestroyObj();
             }            
-        }
-        else
-        {
-            RewardEvent?.Invoke(_reward);
-            DestroyObj();
         }
     }
 

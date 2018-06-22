@@ -9,7 +9,9 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject _ui;
     [SerializeField] GameObject _victory;
     [SerializeField] GameObject _lose;
+    [SerializeField] GameObject _gameUI;
     [SerializeField] Text _health;
+    [SerializeField] Text _money;
 
     private void Start()
     {
@@ -18,8 +20,8 @@ public class UIController : MonoBehaviour
         GameController.VictoryEvent += Victory;
         GameController.LoseEvent += Lose;
         HealthController.HealthChangeEvent += HealthChange;
-    }
-    
+        MoneyController.MoneyChangeEvent += MoneyChange;
+    }    
 
     private void OnDestroy()
     {
@@ -27,6 +29,8 @@ public class UIController : MonoBehaviour
         GameController.StopGameEvent -= StopGame;
         GameController.VictoryEvent -= Victory;
         GameController.LoseEvent -= Lose;
+        HealthController.HealthChangeEvent -= HealthChange;
+        MoneyController.MoneyChangeEvent -= MoneyChange;
     }
 
     public void Click(int index)
@@ -37,7 +41,7 @@ public class UIController : MonoBehaviour
 
     private void StartGame()
     {
-        _health.gameObject.SetActive(true);
+        _gameUI.SetActive(true);
         _ui.SetActive(false);
         _victory.SetActive(false);
         _lose.SetActive(false);
@@ -46,12 +50,17 @@ public class UIController : MonoBehaviour
     void StopGame()
     {
         _ui.SetActive(true);
-        _health.gameObject.SetActive(false);
+        _gameUI.SetActive(false);
     }
 
     private void HealthChange()
     {
-        _health.text = (Mathf.RoundToInt(HealthController.Health)).ToString();
+        _health.text = string.Format("Health: {0}", Mathf.RoundToInt(HealthController.Health));
+    }
+
+    private void MoneyChange()
+    {
+        _money.text = string.Format("Money: {0}", Mathf.RoundToInt(MoneyController.Money));
     }
 
     void Victory()
