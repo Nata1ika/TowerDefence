@@ -49,16 +49,12 @@ public class MobSpawn : MonoBehaviour
     {
         if (_spawn == State.waitWave)
         {
-            if (_waveIndex > 0)
-            {                
-                if (_time > deltaTime)
-                {
-                    _spawn = State.spawnWave;
-                    _waveIndex++;
-                    _time = 0;
-                }
-                _time += Time.deltaTime;
+            if (_time > deltaTime)
+            {
+                _spawn = State.spawnWave;
+                _time = 0;
             }
+            _time += Time.deltaTime;
         }
         else if (_spawn == State.spawnWave)
         {

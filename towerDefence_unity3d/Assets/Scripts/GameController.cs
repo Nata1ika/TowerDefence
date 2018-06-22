@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
 
 public static class GameController
 {
-    public static System.Action StartGameEvent;
-    public static System.Action StopGameEvent;
+    public static Action StartGameEvent;
+    public static Action StopGameEvent;
+    public static Action VictoryEvent;
+    public static Action LoseEvent;
 
     public static void StartGame()
     {
@@ -11,7 +13,14 @@ public static class GameController
     }
 
     public static void Victory()
-    {
+    {        
+        VictoryEvent?.Invoke();
+        StopGameEvent?.Invoke();
+    }
+
+    public static void Lose()
+    {        
+        LoseEvent?.Invoke();
         StopGameEvent?.Invoke();
     }
 }
