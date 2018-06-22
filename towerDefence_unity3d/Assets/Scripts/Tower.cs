@@ -25,11 +25,6 @@ public class Tower : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void OnCollisionEnter(Collision other)
-    {
-        Debug.Log("OnCollisionEnter " + other.gameObject.name + "   " + gameObject.name);
-    }
-
     public void OnTriggerEnter(Collider other)
     {
         Debug.Log("OnTriggerEnter " + other.gameObject.name + "   " + gameObject.name);
@@ -42,15 +37,5 @@ public class Tower : MonoBehaviour
                 mob.Damage(_attack);
             }
         }
-    }
-
-    public void OnCollisionStay(Collision other)
-    {
-        Debug.Log("OnCollisionStay " + other.gameObject.name + "   " + gameObject.name);
-    }
-
-    public void OnTriggerStay(Collider other)
-    {
-        Debug.Log("OnTriggerStay " + other.gameObject.name + "   " + gameObject.name);
     }
 }
