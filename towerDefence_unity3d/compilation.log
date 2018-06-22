@@ -1,5 +1,5 @@
 ********************************************************************************
-*                           20 июня 2018 г. 22:21:18                           *
+*                           22 июня 2018 г. 17:57:43                           *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 4.0.4.230
 Unity version: 2018.1.5f1
@@ -13,157 +13,32 @@ Compiler: Microsoft C# 7.3 (2.8.0.62830)
 - Compilation ------------------------------------------------
 
 Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\csc.exe
-Arguments: -noconfig @Temp/UnityTempFile-25c66b435dbbe3741b6fb38aad8ae361
+Arguments: -noconfig @Temp/UnityTempFile-9813bf16ceb87604e893235360272a9f
 Exit code: 0
-Elapsed time: 3,19 sec
+Elapsed time: 3,52 sec
 
-- Output (11 lines):
-0: Assets\Scripts\MapInfo.cs(8,37): warning CS0649: Field 'MapInfo._curveY' is never assigned to, and will always have its default value null
-1: Assets\Scripts\MapInfo.cs(7,37): warning CS0649: Field 'MapInfo._curveX' is never assigned to, and will always have its default value null
-2: Assets\Scripts\Mob.cs(10,28): warning CS0649: Field 'Mob._damage' is never assigned to, and will always have its default value 0
-3: Assets\Scripts\UIController.cs(8,33): warning CS0649: Field 'UIController._ui' is never assigned to, and will always have its default value null
-4: Assets\Scripts\MobSpawn.cs(7,36): warning CS0649: Field 'MobSpawn._map' is never assigned to, and will always have its default value null
-5: Assets\Scripts\MobSpawn.cs(8,28): warning CS0649: Field 'MobSpawn.deltaTime' is never assigned to, and will always have its default value 0
-6: Assets\Scripts\Mob.cs(9,28): warning CS0649: Field 'Mob._maxHp' is never assigned to, and will always have its default value 0
-7: Assets\Scripts\MobSpawn.cs(6,29): warning CS0649: Field 'MobSpawn._waves' is never assigned to, and will always have its default value null
-8: Assets\Scripts\Mob.cs(11,28): warning CS0649: Field 'Mob._reward' is never assigned to, and will always have its default value 0
-9: Assets\Scripts\UIController.cs(7,36): warning CS0649: Field 'UIController._map' is never assigned to, and will always have its default value null
-10: Assets\Scripts\MapController.cs(7,32): warning CS0649: Field 'MapController._maps' is never assigned to, and will always have its default value null
-
-- Errors (0 lines):
-
-- PDB to MDB conversion --------------------------------------
-
-Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\pdb2mdb.exe
-Arguments: Temp\Assembly-CSharp.dll
-Exit code: 0
-Elapsed time: 0,52 sec
-
-- Output (0 lines):
-
-- Errors (0 lines):
-
-********************************************************************************
-*                           20 июня 2018 г. 22:25:44                           *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 4.0.4.230
-Unity version: 2018.1.5f1
-Platform: Windows
-Target assembly: Assembly-CSharp.dll
-Project directory: N:\Work\towerDefence\towerDefence_unity3d
-Target profile directory: C:\Program Files\Unity\Hub\Editor\2018.1.5f1\Editor\Data\MonoBleedingEdge\lib\mono\unity
-Unity Mono executable: C:\Program Files\Unity\Hub\Editor\2018.1.5f1\Editor\Data\MonoBleedingEdge\bin\mono.exe
-Compiler: Microsoft C# 7.3 (2.8.0.62830)
-
-- Compilation ------------------------------------------------
-
-Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\csc.exe
-Arguments: -noconfig @Temp/UnityTempFile-75690fd9a847141429724920efd0556c
-Exit code: 0
-Elapsed time: 3,15 sec
-
-- Output (11 lines):
-0: Assets\Scripts\Mob.cs(9,28): warning CS0649: Field 'Mob._maxHp' is never assigned to, and will always have its default value 0
-1: Assets\Scripts\MobSpawn.cs(8,28): warning CS0649: Field 'MobSpawn.deltaTime' is never assigned to, and will always have its default value 0
-2: Assets\Scripts\Mob.cs(11,28): warning CS0649: Field 'Mob._reward' is never assigned to, and will always have its default value 0
-3: Assets\Scripts\UIController.cs(7,36): warning CS0649: Field 'UIController._map' is never assigned to, and will always have its default value null
-4: Assets\Scripts\MapInfo.cs(7,37): warning CS0649: Field 'MapInfo._curveX' is never assigned to, and will always have its default value null
-5: Assets\Scripts\MobSpawn.cs(6,29): warning CS0649: Field 'MobSpawn._waves' is never assigned to, and will always have its default value null
-6: Assets\Scripts\MobSpawn.cs(7,36): warning CS0649: Field 'MobSpawn._map' is never assigned to, and will always have its default value null
-7: Assets\Scripts\UIController.cs(8,33): warning CS0649: Field 'UIController._ui' is never assigned to, and will always have its default value null
-8: Assets\Scripts\MapInfo.cs(8,37): warning CS0649: Field 'MapInfo._curveY' is never assigned to, and will always have its default value null
-9: Assets\Scripts\Mob.cs(10,28): warning CS0649: Field 'Mob._damage' is never assigned to, and will always have its default value 0
-10: Assets\Scripts\MapController.cs(7,32): warning CS0649: Field 'MapController._maps' is never assigned to, and will always have its default value null
-
-- Errors (0 lines):
-
-- PDB to MDB conversion --------------------------------------
-
-Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\pdb2mdb.exe
-Arguments: Temp\Assembly-CSharp.dll
-Exit code: 0
-Elapsed time: 0,51 sec
-
-- Output (0 lines):
-
-- Errors (0 lines):
-
-********************************************************************************
-*                           20 июня 2018 г. 22:26:42                           *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 4.0.4.230
-Unity version: 2018.1.5f1
-Platform: Windows
-Target assembly: Assembly-CSharp.dll
-Project directory: N:\Work\towerDefence\towerDefence_unity3d
-Target profile directory: C:\Program Files\Unity\Hub\Editor\2018.1.5f1\Editor\Data\MonoBleedingEdge\lib\mono\unity
-Unity Mono executable: C:\Program Files\Unity\Hub\Editor\2018.1.5f1\Editor\Data\MonoBleedingEdge\bin\mono.exe
-Compiler: Microsoft C# 7.3 (2.8.0.62830)
-
-- Compilation ------------------------------------------------
-
-Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\csc.exe
-Arguments: -noconfig @Temp/UnityTempFile-0e87f6be2bba74f43b74dfbecb0701fd
-Exit code: 0
-Elapsed time: 3,16 sec
-
-- Output (11 lines):
-0: Assets\Scripts\MobSpawn.cs(6,29): warning CS0649: Field 'MobSpawn._waves' is never assigned to, and will always have its default value null
-1: Assets\Scripts\MapInfo.cs(7,37): warning CS0649: Field 'MapInfo._curveX' is never assigned to, and will always have its default value null
-2: Assets\Scripts\MapInfo.cs(8,37): warning CS0649: Field 'MapInfo._curveY' is never assigned to, and will always have its default value null
-3: Assets\Scripts\Mob.cs(10,28): warning CS0649: Field 'Mob._damage' is never assigned to, and will always have its default value 0
-4: Assets\Scripts\UIController.cs(8,33): warning CS0649: Field 'UIController._ui' is never assigned to, and will always have its default value null
-5: Assets\Scripts\UIController.cs(7,36): warning CS0649: Field 'UIController._map' is never assigned to, and will always have its default value null
-6: Assets\Scripts\Mob.cs(11,28): warning CS0649: Field 'Mob._reward' is never assigned to, and will always have its default value 0
-7: Assets\Scripts\MobSpawn.cs(8,28): warning CS0649: Field 'MobSpawn.deltaTime' is never assigned to, and will always have its default value 0
-8: Assets\Scripts\MapController.cs(7,32): warning CS0649: Field 'MapController._maps' is never assigned to, and will always have its default value null
-9: Assets\Scripts\MobSpawn.cs(7,36): warning CS0649: Field 'MobSpawn._map' is never assigned to, and will always have its default value null
-10: Assets\Scripts\Mob.cs(9,28): warning CS0649: Field 'Mob._maxHp' is never assigned to, and will always have its default value 0
-
-- Errors (0 lines):
-
-- PDB to MDB conversion --------------------------------------
-
-Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\pdb2mdb.exe
-Arguments: Temp\Assembly-CSharp.dll
-Exit code: 0
-Elapsed time: 0,15 sec
-
-- Output (0 lines):
-
-- Errors (0 lines):
-
-********************************************************************************
-*                           20 июня 2018 г. 22:28:58                           *
-********************************************************************************
-CSharpCompilerWrapper.exe version: 4.0.4.230
-Unity version: 2018.1.5f1
-Platform: Windows
-Target assembly: Assembly-CSharp.dll
-Project directory: N:\Work\towerDefence\towerDefence_unity3d
-Target profile directory: C:\Program Files\Unity\Hub\Editor\2018.1.5f1\Editor\Data\MonoBleedingEdge\lib\mono\unity
-Unity Mono executable: C:\Program Files\Unity\Hub\Editor\2018.1.5f1\Editor\Data\MonoBleedingEdge\bin\mono.exe
-Compiler: Microsoft C# 7.3 (2.8.0.62830)
-
-- Compilation ------------------------------------------------
-
-Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\csc.exe
-Arguments: -noconfig @Temp/UnityTempFile-5bb5920d3786eda4a916399ee5c5d8dc
-Exit code: 0
-Elapsed time: 3,20 sec
-
-- Output (11 lines):
-0: Assets\Scripts\UIController.cs(7,36): warning CS0649: Field 'UIController._map' is never assigned to, and will always have its default value null
-1: Assets\Scripts\Mob.cs(11,28): warning CS0649: Field 'Mob._reward' is never assigned to, and will always have its default value 0
-2: Assets\Scripts\MobSpawn.cs(8,28): warning CS0649: Field 'MobSpawn.deltaTime' is never assigned to, and will always have its default value 0
-3: Assets\Scripts\MapInfo.cs(8,37): warning CS0649: Field 'MapInfo._curveY' is never assigned to, and will always have its default value null
-4: Assets\Scripts\MobSpawn.cs(6,29): warning CS0649: Field 'MobSpawn._waves' is never assigned to, and will always have its default value null
-5: Assets\Scripts\Mob.cs(9,28): warning CS0649: Field 'Mob._maxHp' is never assigned to, and will always have its default value 0
-6: Assets\Scripts\MapInfo.cs(7,37): warning CS0649: Field 'MapInfo._curveX' is never assigned to, and will always have its default value null
-7: Assets\Scripts\MobSpawn.cs(7,36): warning CS0649: Field 'MobSpawn._map' is never assigned to, and will always have its default value null
-8: Assets\Scripts\MapController.cs(7,32): warning CS0649: Field 'MapController._maps' is never assigned to, and will always have its default value null
-9: Assets\Scripts\Mob.cs(10,28): warning CS0649: Field 'Mob._damage' is never assigned to, and will always have its default value 0
-10: Assets\Scripts\UIController.cs(8,33): warning CS0649: Field 'UIController._ui' is never assigned to, and will always have its default value null
+- Output (21 lines):
+0: Assets\Scripts\Tower.cs(8,28): warning CS0649: Field 'Tower._attack' is never assigned to, and will always have its default value 0
+1: Assets\Scripts\MobSpawn.cs(6,29): warning CS0649: Field 'MobSpawn._waves' is never assigned to, and will always have its default value null
+2: Assets\Scripts\UIController.cs(13,27): warning CS0649: Field 'UIController._health' is never assigned to, and will always have its default value null
+3: Assets\Scripts\UIController.cs(11,33): warning CS0649: Field 'UIController._lose' is never assigned to, and will always have its default value null
+4: Assets\Scripts\MapInfo.cs(8,37): warning CS0649: Field 'MapInfo._curveY' is never assigned to, and will always have its default value null
+5: Assets\Scripts\MoneyController.cs(6,28): warning CS0649: Field 'MoneyController._maxMoney' is never assigned to, and will always have its default value 0
+6: Assets\Scripts\UIController.cs(9,33): warning CS0649: Field 'UIController._ui' is never assigned to, and will always have its default value null
+7: Assets\Scripts\HealthController.cs(8,28): warning CS0649: Field 'HealthController._maxHealth' is never assigned to, and will always have its default value 0
+8: Assets\Scripts\TowerSpawn.cs(8,29): warning CS0649: Field 'TowerSpawn._camera' is never assigned to, and will always have its default value null
+9: Assets\Scripts\MapInfo.cs(7,37): warning CS0649: Field 'MapInfo._curveX' is never assigned to, and will always have its default value null
+10: Assets\Scripts\Mob.cs(11,28): warning CS0649: Field 'Mob._reward' is never assigned to, and will always have its default value 0
+11: Assets\Scripts\UIController.cs(14,27): warning CS0649: Field 'UIController._money' is never assigned to, and will always have its default value null
+12: Assets\Scripts\Mob.cs(10,28): warning CS0649: Field 'Mob._damage' is never assigned to, and will always have its default value 0
+13: Assets\Scripts\UIController.cs(8,36): warning CS0649: Field 'UIController._map' is never assigned to, and will always have its default value null
+14: Assets\Scripts\UIController.cs(10,33): warning CS0649: Field 'UIController._victory' is never assigned to, and will always have its default value null
+15: Assets\Scripts\MobSpawn.cs(8,28): warning CS0649: Field 'MobSpawn.deltaTime' is never assigned to, and will always have its default value 0
+16: Assets\Scripts\Mob.cs(9,28): warning CS0649: Field 'Mob._maxHp' is never assigned to, and will always have its default value 0
+17: Assets\Scripts\MapController.cs(7,32): warning CS0649: Field 'MapController._maps' is never assigned to, and will always have its default value null
+18: Assets\Scripts\UIController.cs(12,33): warning CS0649: Field 'UIController._gameUI' is never assigned to, and will always have its default value null
+19: Assets\Scripts\TowerSpawn.cs(7,30): warning CS0649: Field 'TowerSpawn._tower' is never assigned to, and will always have its default value null
+20: Assets\Scripts\MobSpawn.cs(7,36): warning CS0649: Field 'MobSpawn._map' is never assigned to, and will always have its default value null
 
 - Errors (0 lines):
 
@@ -173,6 +48,61 @@ Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\pdb2md
 Arguments: Temp\Assembly-CSharp.dll
 Exit code: 0
 Elapsed time: 0,17 sec
+
+- Output (0 lines):
+
+- Errors (0 lines):
+
+********************************************************************************
+*                           22 июня 2018 г. 18:02:06                           *
+********************************************************************************
+CSharpCompilerWrapper.exe version: 4.0.4.230
+Unity version: 2018.1.5f1
+Platform: Windows
+Target assembly: Assembly-CSharp.dll
+Project directory: N:\Work\towerDefence\towerDefence_unity3d
+Target profile directory: C:\Program Files\Unity\Hub\Editor\2018.1.5f1\Editor\Data\MonoBleedingEdge\lib\mono\unity
+Unity Mono executable: C:\Program Files\Unity\Hub\Editor\2018.1.5f1\Editor\Data\MonoBleedingEdge\bin\mono.exe
+Compiler: Microsoft C# 7.3 (2.8.0.62830)
+
+- Compilation ------------------------------------------------
+
+Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\csc.exe
+Arguments: -noconfig @Temp/UnityTempFile-6cacd8d6211ed7542aa4dfe4c98b484a
+Exit code: 0
+Elapsed time: 3,53 sec
+
+- Output (21 lines):
+0: Assets\Scripts\TowerSpawn.cs(8,29): warning CS0649: Field 'TowerSpawn._camera' is never assigned to, and will always have its default value null
+1: Assets\Scripts\UIController.cs(14,27): warning CS0649: Field 'UIController._money' is never assigned to, and will always have its default value null
+2: Assets\Scripts\MobSpawn.cs(8,28): warning CS0649: Field 'MobSpawn.deltaTime' is never assigned to, and will always have its default value 0
+3: Assets\Scripts\MapInfo.cs(7,37): warning CS0649: Field 'MapInfo._curveX' is never assigned to, and will always have its default value null
+4: Assets\Scripts\Mob.cs(11,28): warning CS0649: Field 'Mob._reward' is never assigned to, and will always have its default value 0
+5: Assets\Scripts\MapController.cs(7,32): warning CS0649: Field 'MapController._maps' is never assigned to, and will always have its default value null
+6: Assets\Scripts\UIController.cs(8,36): warning CS0649: Field 'UIController._map' is never assigned to, and will always have its default value null
+7: Assets\Scripts\Mob.cs(9,28): warning CS0649: Field 'Mob._maxHp' is never assigned to, and will always have its default value 0
+8: Assets\Scripts\MapInfo.cs(8,37): warning CS0649: Field 'MapInfo._curveY' is never assigned to, and will always have its default value null
+9: Assets\Scripts\UIController.cs(13,27): warning CS0649: Field 'UIController._health' is never assigned to, and will always have its default value null
+10: Assets\Scripts\HealthController.cs(8,28): warning CS0649: Field 'HealthController._maxHealth' is never assigned to, and will always have its default value 0
+11: Assets\Scripts\UIController.cs(12,33): warning CS0649: Field 'UIController._gameUI' is never assigned to, and will always have its default value null
+12: Assets\Scripts\MobSpawn.cs(6,29): warning CS0649: Field 'MobSpawn._waves' is never assigned to, and will always have its default value null
+13: Assets\Scripts\MobSpawn.cs(7,36): warning CS0649: Field 'MobSpawn._map' is never assigned to, and will always have its default value null
+14: Assets\Scripts\Tower.cs(8,28): warning CS0649: Field 'Tower._attack' is never assigned to, and will always have its default value 0
+15: Assets\Scripts\MoneyController.cs(6,28): warning CS0649: Field 'MoneyController._maxMoney' is never assigned to, and will always have its default value 0
+16: Assets\Scripts\UIController.cs(10,33): warning CS0649: Field 'UIController._victory' is never assigned to, and will always have its default value null
+17: Assets\Scripts\UIController.cs(11,33): warning CS0649: Field 'UIController._lose' is never assigned to, and will always have its default value null
+18: Assets\Scripts\UIController.cs(9,33): warning CS0649: Field 'UIController._ui' is never assigned to, and will always have its default value null
+19: Assets\Scripts\TowerSpawn.cs(7,30): warning CS0649: Field 'TowerSpawn._tower' is never assigned to, and will always have its default value null
+20: Assets\Scripts\Mob.cs(10,28): warning CS0649: Field 'Mob._damage' is never assigned to, and will always have its default value 0
+
+- Errors (0 lines):
+
+- PDB to MDB conversion --------------------------------------
+
+Process: N:\Work\towerDefence\towerDefence_unity3d\CSharp70Support\Roslyn\pdb2mdb.exe
+Arguments: Temp\Assembly-CSharp.dll
+Exit code: 0
+Elapsed time: 0,34 sec
 
 - Output (0 lines):
 
